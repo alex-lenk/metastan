@@ -9,4 +9,8 @@
 @import "common/form";
 @import "common/checkbox-radio";
 @import "blocks/header-top";
+@import "blocks/header-info";
 
+header {
+    box-shadow: 0 5px 5px rgba(#000, 0.05);
+}

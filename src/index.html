@@ -13,8 +13,8 @@
                             <span class="logo-text">Оборудование для обработки металла</span>
                         </a>
 
-                        <nav class="main-nav">
-                            <button class="menu-toggle two-strips btn">Меню</button>
+                        <nav class="nav-menu">
+                            <button class="nav-menu__toggle two-strips btn">Меню</button>
                         </nav>
                     </div>
 
@@ -42,9 +42,44 @@
                 </div>
             </div>
         </div>
+
+        <div class="header-info container">
+            <div class="row">
+                <nav class="main-nav col-lg-9">
+                    <a href="#" class="btn btn-blue btn-decor">КАТАЛОГ ОБОРУДОВАНИЯ</a>
+
+                    <ul class="main-nav__menu list-unstyled">
+                        <li class="main-nav__item main-nav__parent two-strips"><a href="#">СТАНКИ</a></li>
+                        <li class="main-nav__item main-nav__parent two-strips"><a href="#">РАСХОДНИКИ И ОСНАСТКА</a></li>
+                        <li class="main-nav__item"><a href="#">Б/У ОБОРУДОВАНИЕ</a></li>
+                        <li class="main-nav__item"><a href="#">ГОТОВЫЕ РЕШЕНИЯ</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-basket col-lg-3">
+                    <div class="header-basket__icon">
+                        <svg class="basket">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <div class="basket-text__title">Корзина</div>
+                        <div class="basket-text__total">
+                            3 товара на 24 560
+
+                            <svg class="ruble">
+                                <use xlink:href="img/sprite.svg#ruble"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 </div>
 
 <!-- include "template/scripts.html" -->
+
 </body>
 </html>

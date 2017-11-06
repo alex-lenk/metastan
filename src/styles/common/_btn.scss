@@ -9,9 +9,11 @@
     line-height: 1;
     display: inline-block;
     transition: all 0.3s ease;
+    font-family: 'Ubuntu', "Helvetica Neue", Helvetica, sans-serif;
     
     &-blue {
         height: 40px;
+        line-height: 40px;
         font-size: 12px;
         font-weight: bold;
         text-transform: uppercase;
