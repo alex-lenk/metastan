@@ -23,4 +23,15 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 3000
     });
+
+    $('.demonstrations-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        fade: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
 });

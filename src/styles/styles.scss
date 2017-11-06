@@ -11,6 +11,7 @@
 @import "blocks/header-top";
 @import "blocks/header-info";
 @import "blocks/home-slider";
+@import "blocks/section-info";
 
 header {
     box-shadow: 0 5px 5px rgba(#000, 0.05);
@@ -27,7 +28,18 @@ header {
         left: 17px;
         position: absolute;
         background-color: $blueColor;
-        box-shadow: 0 5px 0 #2d8cc8;
+        box-shadow: 0 5px 0 $blueColor;
         content: '';
     }
+}
+
+.btn-light {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #4c9dd0;
 }
