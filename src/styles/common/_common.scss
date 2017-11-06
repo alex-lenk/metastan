@@ -1,0 +1,152 @@
+@import "variables";
+@import "mixin";
+
+body {
+    color: $mainColor;
+    line-height: 1.4;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a, .as-link {
+    color: #474CA6;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+        color: #474CA6;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.as-link {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+b, strong {
+    font-weight: normal;
+}
+
+h2, h3, h4, h5 {
+    padding: 10px 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: #390050;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 26px;
+    text-transform: uppercase;
+    @include font-size(26px);
+}
+
+h2 {
+    margin-bottom: 26px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+h3 {
+    @include font-size(20px);
+}
+
+h4 {
+    @include font-size(18px);
+}
+
+h5 {
+    @include font-size(16px);
+}
+
+h6 {
+    @include font-size(16px);
+}
+
+.text {
+    &-center {
+        text-align: center
+    }
+    &-left {
+        text-align: left
+    }
+    &-right {
+        text-align: right
+    }
+    &-justify {
+        text-align: justify
+    }
+    &-bold {
+        font-weight: bold;
+    }
+    &-nowrap {
+        white-space: nowrap;
+    }
+    &-lowercase {
+        text-transform: lowercase;
+    }
+    &-uppercase {
+        text-transform: uppercase;
+    }
+    &-capitalize {
+        text-transform: capitalize;
+    }
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.list {
+    &-double-arrow {
+        padding-left: 0;
+        margin-bottom: 0;
+        font-size: 17px;
+        line-height: 24px;
+        list-style: none;
+        li:not(:last-child) {
+            margin-bottom: 25px;
+        }
+        a::before {
+            margin-right: 13px;
+            top: -1px;
+            letter-spacing: -3px;
+            display: inline;
+            position: relative;
+            content: '››';
+        }
+    }
+    &-unstyled {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+button, input, select, textarea {
+    &:focus,
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
