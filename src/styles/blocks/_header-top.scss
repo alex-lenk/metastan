@@ -30,22 +30,6 @@
     font-weight: bold;
 }
 
-.two-strips {
-    padding-left: 40px;
-    position: relative;
-    &::before {
-        width: 13px;
-        height: 1px;
-        margin-top: -3px;
-        top: 50%;
-        left: 17px;
-        position: absolute;
-        background-color: $blueColor;
-        box-shadow: 0 5px 0 #2d8cc8;
-        content: '';
-    }
-}
-
 .search-field {
     position: relative;
     display: flex;

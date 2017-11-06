@@ -27,6 +27,29 @@
         }
     }
     
+    &-decor {
+        padding-left: 30px;
+        position: relative;
+        width: 210px;
+        &::before {
+            width: 4px;
+            height: 4px;
+            top: 14px;
+            left: 13px;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 7px 0 0 #fff, 7px 7px 0 #fff, 0 7px 0 #fff;
+            transition: all 0.3s ease;
+            content: '';
+        }
+        &:hover, &:focus {
+            &::before {
+                background-color: $blueColor;
+                box-shadow: 7px 0 0 $blueColor, 7px 7px 0 $blueColor, 0 7px 0 $blueColor;
+            }
+        }
+    }
+    
     &-white {
         width: 160px;
         height: 55px;

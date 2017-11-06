@@ -6,6 +6,10 @@
 .main-nav {
     display: flex;
     align-items: center;
+    .btn-decor {
+        max-width: 210px;
+        flex: 1 0 auto;
+    }
 }
 
 .main-nav__menu {
@@ -19,36 +23,6 @@
         color: #313131;
         &:hover {
             color: $blueColor;
-        }
-    }
-}
-
-.main-nav__item {
-}
-
-.main-nav__parent {
-}
-
-.btn-decor {
-    padding-left: 30px;
-    position: relative;
-    max-width: 210px;
-    flex: 1 0 auto;
-    &::before {
-        width: 4px;
-        height: 4px;
-        top: 14px;
-        left: 13px;
-        position: absolute;
-        background-color: #fff;
-        box-shadow: 7px 0 0 #fff, 7px 7px 0 #fff, 0 7px 0 #fff;
-        transition: all 0.3s ease;
-        content: '';
-    }
-    &:hover, &:focus {
-        &::before {
-            background-color: $blueColor;
-            box-shadow: 7px 0 0 $blueColor, 7px 7px 0 $blueColor, 0 7px 0 $blueColor;
         }
     }
 }
@@ -84,9 +58,6 @@
     color: #0a2f18;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-.basket-text {
 }
 
 .basket-text__total {

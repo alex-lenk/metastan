@@ -13,4 +13,14 @@ $(document).ready(function () {
         document.head.appendChild(msViewportStyle)
     }
 
+    $('.home-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        fade: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
 });
