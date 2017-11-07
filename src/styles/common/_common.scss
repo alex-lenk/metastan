@@ -3,7 +3,7 @@
 
 body {
     color: $mainColor;
-    line-height: 1.4;
+    line-height: 1.5;
     background-repeat: no-repeat;
     background-color: #fff;
     display: flex;
@@ -12,8 +12,9 @@ body {
 }
 
 a, .as-link {
-    color: #474CA6;
+    color: #2d8cc8;
     text-decoration: none;
+    border-bottom: 1px solid #dadada;
     transition: all 0.3s ease;
     &:hover {
         color: #474CA6;
@@ -39,18 +40,17 @@ h2, h3, h4, h5 {
     padding: 10px 0 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h1 {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    color: #390050;
+    color: #303030;
 }
 
-h1 {
-    margin-bottom: 50px;
-    font-size: 26px;
+h1, .h1 {
+    margin-bottom: 20px;
     text-transform: uppercase;
-    @include font-size(26px);
+    @include font-size(30px);
 }
 
 h2 {

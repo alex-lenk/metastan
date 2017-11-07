@@ -44,3 +44,43 @@ header {
     color: #fff;
     border: 1px solid #4c9dd0;
 }
+
+.line-decor {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaf0f4;
+}
+
+.content {
+    margin-bottom: 75px;
+}
+
+.main-content {
+    font-size: 14px;
+    @include clearfix;
+}
+
+.sidebar-title a {
+    color: inherit;
+    display: inline-block;
+}
+
+.sidebar-news li:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.sidebar-news__item {
+    font-size: 14px;
+    color: #303030;
+}
+
+.sidebar-news__date {
+    margin-bottom: 5px;
+    color: #d2d2d2;
+}
+
+.sidebar-news__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    
+}
