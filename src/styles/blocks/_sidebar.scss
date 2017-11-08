@@ -1,0 +1,41 @@
+.sidebar {
+    padding-left: 40px;
+}
+
+.sidebar-title {
+    margin-bottom: 12px;
+    a {
+        color: inherit;
+        display: inline-block;
+        position: relative;
+        &::after {
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            background-color: #dadada;
+            content: '';
+        }
+    }
+}
+
+.sidebar-news li:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.sidebar-news__item {
+    font-size: 14px;
+    color: #303030;
+}
+
+.sidebar-news__date {
+    margin-bottom: 5px;
+    color: #d2d2d2;
+}
+
+.sidebar-news__title {
+    margin-bottom: 13px;
+    font-size: 14px;
+    
+}

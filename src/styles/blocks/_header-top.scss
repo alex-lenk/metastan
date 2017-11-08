@@ -1,7 +1,10 @@
 .header-top {
     padding-top: 35px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     border-bottom: 1px solid $borderColor;
+    .row {
+        align-items: center;
+    }
 }
 
 .header-logo-nav {
@@ -28,6 +31,7 @@
     font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: left;
 }
 
 .search-field {
@@ -67,13 +71,13 @@
 }
 
 .header-support__phone {
-    padding-left: 20px;
+    padding-left: 23px;
     position: relative;
     .phone {
         width: 16px;
         height: 16px;
         fill: $blueColor;
-        top: 4px;
+        top: 7px;
         left: 0;
         position: absolute;
     }
@@ -92,4 +96,5 @@
     max-width: 140px;
     margin-left: auto;
     flex: 1 0 auto;
+    align-self: center;
 }

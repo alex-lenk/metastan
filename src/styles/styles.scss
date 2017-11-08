@@ -13,6 +13,7 @@
 @import "blocks/home-slider";
 @import "blocks/section-info";
 @import "blocks/advantages";
+@import "blocks/sidebar";
 
 header {
     box-shadow: 0 5px 5px rgba(#000, 0.05);
@@ -26,7 +27,7 @@ header {
         height: 1px;
         margin-top: -3px;
         top: 50%;
-        left: 17px;
+        left: 16px;
         position: absolute;
         background-color: $blueColor;
         box-shadow: 0 5px 0 $blueColor;
@@ -43,11 +44,15 @@ header {
     font-weight: bold;
     color: #fff;
     border: 1px solid #4c9dd0;
+    &:hover {
+        color: $blueColor;
+        background-color: #fff;
+    }
 }
 
 .line-decor {
-    margin-bottom: 15px;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #eaf0f4;
 }
 
@@ -58,29 +63,4 @@ header {
 .main-content {
     font-size: 14px;
     @include clearfix;
-}
-
-.sidebar-title a {
-    color: inherit;
-    display: inline-block;
-}
-
-.sidebar-news li:not(:last-child) {
-    margin-bottom: 35px;
-}
-
-.sidebar-news__item {
-    font-size: 14px;
-    color: #303030;
-}
-
-.sidebar-news__date {
-    margin-bottom: 5px;
-    color: #d2d2d2;
-}
-
-.sidebar-news__title {
-    margin-bottom: 10px;
-    font-size: 14px;
-    
 }
