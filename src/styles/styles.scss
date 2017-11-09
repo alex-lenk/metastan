@@ -64,3 +64,66 @@ header {
     font-size: 14px;
     @include clearfix;
 }
+
+footer {
+  padding-top: 50px;
+  border-top: 1px solid #eaf0f4;
+}
+
+.footer-menu {
+}
+
+.footer-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #303030;
+}
+
+.footer-production {
+  margin-left: -24px;
+  columns: 2 260px;
+}
+
+.footer-menu__list {
+  font-size: 14px;
+  a {
+    color: #465a63;
+    &:hover {
+      color: $blueColor;
+    }
+  }
+  li {
+    padding-left: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+.footer-menu__parent {
+  position: relative;
+  &::before {
+    width: 13px;
+    height: 1px;
+    margin-top: -3px;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    background-color: #2d8cc8;
+    box-shadow: 0 5px 0 #2d8cc8;
+    content: '';
+  }
+}
+
+.footer-bottom {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid #eaf0f4;
+  color: #465a63;
+  font-size: 14px;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+.footer-developer {
+  margin-left: auto;
+}
