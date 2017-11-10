@@ -41,6 +41,9 @@
     .btn {
         width: 100%;
         margin-top: 10px;
+        &:hover {
+            border-color: transparent;
+        }
     }
 }
 
@@ -126,6 +129,10 @@
     background-color: $blueColor;
     position: relative;
     overflow: hidden;
+    svg {
+        fill: #fff;
+        position: absolute;
+    }
 }
 
 .section-info__phone {
@@ -135,10 +142,8 @@
     .phone {
         width: 16px;
         height: 16px;
-        fill: #fff;
         top: 4px;
         left: 0;
-        position: absolute;
     }
     a {
         color: #fff;
@@ -170,10 +175,8 @@
     .location {
         width: 17px;
         height: 17px;
-        fill: #fff;
         top: -1px;
         left: 2px;
-        position: absolute;
     }
 }
 
@@ -184,10 +187,8 @@
     .envelope {
         width: 17px;
         height: 17px;
-        fill: #fff;
         top: -1px;
         left: 2px;
-        position: absolute;
     }
     a {
         color: #fff;
