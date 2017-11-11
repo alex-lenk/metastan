@@ -17,7 +17,7 @@
     font-size: 12px;
 }
 
-.article-content {
+.page-article {
     margin-bottom: 75px;
     padding-top: 40px;
     color: #303030;
@@ -25,6 +25,14 @@
     h1 {
         margin-bottom: 40px;
     }
+}
+
+.article-media {
+    margin-bottom: 40px;
+}
+
+.article-content {
+    padding-bottom: 60px;
     
     h3 {
         color: #2d8cc8;
@@ -33,8 +41,4 @@
     h2, h3, h4, h5 {
         padding: 15px 0 20px;
     }
-}
-
-.article-media {
-    margin-bottom: 40px;
 }
