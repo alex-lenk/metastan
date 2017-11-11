@@ -12,9 +12,8 @@ body {
 }
 
 a, .as-link {
-    color: #2d8cc8;
+    color: $blueColor;
     text-decoration: none;
-    //border-bottom: 1px solid #dadada;
     transition: all 0.3s ease;
     &:hover {
         color: #474CA6;
@@ -36,14 +35,9 @@ b, strong {
     font-weight: normal;
 }
 
-h2, h3, h4, h5 {
-    padding: 10px 0 20px;
-}
-
-h1, h2, h3, h4, h5, h6, .h1 {
+h1, .h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
-    font-weight: normal;
     color: #303030;
 }
 
@@ -55,12 +49,13 @@ h1, .h1 {
 
 h2 {
     margin-bottom: 26px;
-    font-size: 22px;
     text-transform: uppercase;
+    @include font-size(24px);
 }
 
+
 h3 {
-    @include font-size(20px);
+    @include font-size(21px);
 }
 
 h4 {

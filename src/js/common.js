@@ -34,4 +34,35 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 3000
     });
+
+// Определяем мобильный браузер
+    function MobileDetect() {
+        var UA = navigator.userAgent.toLowerCase();
+        return (/android|webos|iris|bolt|mobile|iphone|ipad|ipod|iemobile|blackberry|windows phone|opera mobi|opera mini/i.test(UA)) ? true : false;
+    }
+
+    var articleMeta = $(".article-meta"),
+        articleMetaFixed = 'fixed';
+
+    $window = $(window);
+
+// Если браузер не мобильный, работаем
+    if (!MobileDetect()) {
+        if (articleMeta.length) {
+            // Определяем координаты верха блока навигации
+            $h = articleMeta.offset().top;
+            $window.scroll(function () {
+                // Если прокрутили скролл ниже макушки блока, включаем фиксацию
+                if ($window.scrollTop() > $h) {
+                    articleMeta.addClass(articleMetaFixed);
+                } else {
+                    //Иначе возвращаем всё назад
+                    articleMeta.removeClass(articleMetaFixed);
+                }
+            });
+        }
+    }
+
+
+
 });

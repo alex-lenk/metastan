@@ -1,0 +1,40 @@
+.article-meta {
+    top: 0;
+}
+
+.meta-data {
+    margin-bottom: 20px;
+    line-height: 1;
+    color: #e6e6e6;
+    font-weight: bold;
+}
+
+.meta-data__number {
+    font-size: 60px;
+}
+
+.meta-data__month {
+    font-size: 12px;
+}
+
+.article-content {
+    margin-bottom: 75px;
+    padding-top: 40px;
+    color: #303030;
+    font-size: 16px;
+    h1 {
+        margin-bottom: 40px;
+    }
+    
+    h3 {
+        color: #2d8cc8;
+        font-weight: normal;
+    }
+    h2, h3, h4, h5 {
+        padding: 15px 0 20px;
+    }
+}
+
+.article-media {
+    margin-bottom: 40px;
+}

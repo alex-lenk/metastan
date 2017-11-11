@@ -1,0 +1,20 @@
+.breadcrumbs {
+    margin-bottom: 15px;
+    display: flex;
+    color: #0a2f18;
+    font-size: 14px;
+    a {
+        border-bottom: 1px solid;
+        line-height: 1;
+        display: inline-block;
+    }
+    li:not(:last-child) {
+        &::after {
+            margin: 0 10px;
+            border: 5px solid transparent;
+            border-left-color: #e2eff8;
+            display: inline-block;
+            content: '';
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.social {
+    li {
+        width: 55px;
+        height: 55px;
+        transition: all 0.3s ease;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        &:hover {
+            background-color: #fff;
+        }
+    }
+    a {
+        height: inherit;
+        display: block;
+        position: relative;
+    }
+    svg {
+        width: 15px;
+        height: 15px;
+        top: 50%;
+        left: 50%;
+        fill: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+    }
+}
+
+.social-vk {
+    border: 1px solid #316384;
+    background-color: #316384;
+    &:hover .vk {
+        fill: #316384;
+    }
+}
+
+.social-fb {
+    border: 1px solid #21528d;
+    background-color: #21528d;
+    &:hover .fb {
+        fill: #21528d;
+    }
+}
+
+.social-ok {
+    border: 1px solid #f37300;
+    background-color: #f37300;
+    &:hover .ok {
+        fill: #f37300;
+    }
+}
+
+.social-gp {
+    border: 1px solid #cd0000;
+    background-color: #cd0000;
+    &:hover .gp {
+        fill: #cd0000;
+    }
+}
