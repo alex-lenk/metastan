@@ -1,0 +1,43 @@
+.not-found {
+    height: 100%;
+    body {
+        height: inherit;
+        padding: 60px 0 70px;
+        background-color: #f6f8f9;
+    }
+}
+
+.page-not-found {
+    height: inherit;
+    line-height: 1;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &::before {
+        width: 545px;
+        height: 480px;
+        top: 50%;
+        left: -15%;
+        transform: translateY(-50%);
+        position: absolute;
+        background: #fff url(../img/exclamation.svg) no-repeat center;
+        content: '';
+    }
+}
+
+.not-found-error {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 150px;
+    color: #303030;
+}
+
+.not-found-text {
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #465a63;
+}

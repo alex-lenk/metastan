@@ -8,6 +8,7 @@
 @import "common/btn";
 @import "common/form";
 @import "common/checkbox-radio";
+@import "blocks/not-found";
 @import "blocks/header-top";
 @import "blocks/header-info";
 @import "blocks/home-slider";
@@ -20,6 +21,7 @@
 @import "blocks/pagination";
 @import "blocks/article";
 @import "blocks/posts";
+@import "blocks/useful-links";
 
 header {
     box-shadow: 0 5px 5px rgba(#000, 0.05);
