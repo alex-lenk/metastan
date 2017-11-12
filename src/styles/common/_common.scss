@@ -1,14 +1,18 @@
 @import "variables";
 @import "mixin";
 
+html, body {
+    height: 100%;
+}
+
 body {
+    min-height: 100vh;
     color: $mainColor;
     line-height: 1.5;
-    background-repeat: no-repeat;
     background-color: #fff;
+    font-family: 'Ubuntu', "Helvetica Neue", Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    font-family: 'Ubuntu', "Helvetica Neue", Helvetica, sans-serif;
 }
 
 a, .as-link {
@@ -52,7 +56,6 @@ h2 {
     text-transform: uppercase;
     @include font-size(24px);
 }
-
 
 h3 {
     @include font-size(21px);

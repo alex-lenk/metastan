@@ -23,6 +23,10 @@
 @import "blocks/posts";
 @import "blocks/useful-links";
 
+.page header {
+    margin-bottom: 40px;
+}
+
 header {
     box-shadow: 0 5px 5px rgba(#000, 0.05);
 }
@@ -75,4 +79,37 @@ header {
 
 .fixed {
     position: fixed;
+}
+
+.basket-wrap {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    flex: 1;
+    background-color: #f6f8f9;
+    h1 {
+        margin-bottom: 35px;
+    }
+}
+
+.basket-empty {
+    min-height: 470px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.basket-empty-title {
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: #303030;
+    text-transform: none;
+}
+
+.basket-empty-text {
+    margin-bottom: 50px;
+    color: #465a63;
+    font-size: 14px;
 }
