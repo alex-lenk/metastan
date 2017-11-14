@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<!-- include "template/head.html" -->
+<body>
+<!-- include "template/header.html" -->
+
+<div class="basket-wrap">
+    <div class="container">
+        <ul class="breadcrumbs list-unstyled">
+            <li><a href="index.html">Главная</a></li>
+            <li>Корзина</li>
+        </ul>
+
+        <h1>Корзина</h1>
+
+        <div class="row">
+            <div class="col-lg-9">
+                <ul class="basket-steps list-unstyled">
+                    <li class="basket-steps__next">Редактирование вашего заказа</li>
+                    <li class="basket-steps__active basket-steps__next">Заполнение персональных данных</li>
+                    <li>Оформление заказза</li>
+                </ul>
+
+                <div id="msCart">
+                    <div class="contacts-data">
+                        <h4 class="contacts-data__title">Контактные данные</h4>
+
+                        <div class="ui-group">
+                            <label class="control-label" for="receiver">
+                                <span class="required-star">*</span> Получатель
+                            </label>
+
+                            <div>
+                                <input type="text" id="receiver" name="receiver" value="" class="ui-field">
+                            </div>
+                        </div>
+
+                        <div class="ui-group">
+                            <label class="control-label" for="phone">
+                                <span class="required-star">*</span> Телефон
+                            </label>
+                            <div>
+                                <input type="text" id="phone" name="phone" value="" class="ui-field">
+                            </div>
+                        </div>
+
+                        <div class="ui-group">
+                            <label class="control-label" for="email">
+                                <span class="required-star">*</span> Email
+                            </label>
+                            <div>
+                                <input type="text" id="email" name="email" value="" class="ui-field">
+                            </div>
+                        </div>
+
+                        <div class="ui-group">
+                            <label class="control-label" for="street">Адрес доставки</label>
+                            <div>
+                                <input type="text" id="street" name="street" value="" class="ui-field">
+                            </div>
+                        </div>
+
+                        <div class="ui-group">
+                            <label class="control-label" for="comment">
+                                <span class="required-star">*</span> Комментарий
+                            </label>
+                            <div>
+                                <textarea name="comment" id="comment" class="ui-textarea ui-field"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="ui-group">
+                            <div class="control-label">
+                                <span class="required-star">*</span> Выберите доставку
+                            </div>
+
+                            <div><label class="delivery label-block">
+                                <input type="radio" name="delivery" value="1" id="delivery_1" class="radio-custom"
+                                       data-payments="[1]" checked="">
+                                <span class="radio-custom-view label">Самовывоз</span>
+                            </label></div>
+                            <div><label class="delivery label-block">
+                                <input type="radio" name="delivery" value="2" id="delivery_2"class="radio-custom" data-payments="[1]">
+                                <span class="radio-custom-view label">Доставка курьером</span>
+                            </label></div>
+                        </div>
+                    </div>
+
+                    <div class="ms-card__bottom">
+                        <form method="post">
+                            <button class="btn-blue-big btn-big" type="submit" name="ms2_action" value="cart/clean">
+                                ОФОРМИТЬ ЗАКАЗ
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <aside class="col-lg-3">
+                <div class="order-block">
+                    <div class="order-block__title">
+                        <svg class="tag">
+                            <use xlink:href="img/sprite.svg#tag"></use>
+                        </svg>
+                        Оформление заказа
+                    </div>
+
+                    <div class="order-block__total">
+                        <div class="order-block__text">ОБЩАЯ СУММА ЗАКАЗА</div>
+
+                        <span class="ms2_total_cost">600 000</span>
+
+                        <svg class="ruble">
+                            <use xlink:href="img/sprite.svg#ruble"></use>
+                        </svg>
+                    </div>
+
+                    <form method="post">
+                        <button class="btn btn-blue" type="submit" name="ms2_action" value="cart/clean">
+                            ОФОРМИТЬ ЗАКАЗ
+                        </button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- include "template/footer.html" -->
+
+<!-- include "template/scripts.html" -->
+
+</body>
+</html>

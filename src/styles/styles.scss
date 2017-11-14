@@ -70,3 +70,31 @@ header {
 .useful-links a {
     margin: 0 10px;
 }
+
+.contacts-data {
+    padding: 40px 45px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .ui-field {
+        width: 100%;
+    }
+    .ui-group {
+        max-width: calc(100% / 2 - 15px);
+        flex-basis: calc(100% / 2 - 15px);
+    }
+}
+
+.contacts-data__title {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #303030;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.required-star {
+    color: #cc0000;
+}

@@ -3,39 +3,39 @@
 .radio-custom {
     display: none;
     &:checked + .radio-custom-view {
-        color: #2F2732;
+        color: #303030;
         &::before {
-            border-color: #474CA6;
+            border-color: #303030;
         }
         &::after {
-            border-color: #474CA6;
+            border-color: #303030;
         }
     }
     &-view {
         cursor: pointer;
         position: relative;
-        color: #867A8A;
-        font-size: 15px;
+        color: #465a63;
+        font-size: 14px;
         display: inline-flex;
         align-items: center;
         flex-wrap: wrap;
         transition: all 0.3s ease;
         &::before {
-            width: 24px;
-            height: 24px;
+            width: 17px;
+            height: 17px;
             margin-right: 14px;
             background-color: #ffffff;
             content: '';
             line-height: 1;
             border-radius: 50%;
-            border: 1px solid #E6DDEE;
+            border: 1px solid #465a63;
             transition: all 0.3s ease;
         }
         &:after {
-            width: 11px;
-            height: 6px;
-            top: 8px;
-            left: 7px;
+            width: 8px;
+            height: 5px;
+            top: 7px;
+            left: 5px;
             position: absolute;
             border-bottom: 2px solid transparent;
             border-left: 2px solid transparent;
@@ -50,6 +50,11 @@
 }
 
 /*
+<label class="label-block">
+    <input type="radio" name="" class="radio-custom">
+    <span class="radio-custom-view label">Самовывоз</span>
+</label>
+
 <label class="label-block">
     <input type="checkbox" name="" class="checkbox-custom">
     <span class="checkbox-custom-view label">Fabfoxx</span>
