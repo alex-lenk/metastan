@@ -78,4 +78,17 @@ $(document).ready(function () {
         $input.change();
         return false;
     });
+
+    // BEGIN
+    $(".order-next").click(
+        function () {
+            var basketStepsActive = "basket-steps__active",
+                hidden = 'hidden';
+            $('#basket-step-1').removeClass(basketStepsActive);
+            $('#basket-step-2').addClass(basketStepsActive);
+            $('#msCart').addClass(hidden);
+            $('.ms2_form').removeClass(hidden);
+        }
+    );
+    // END
 });
