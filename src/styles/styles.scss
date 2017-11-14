@@ -21,7 +21,8 @@
 @import "blocks/pagination";
 @import "blocks/article";
 @import "blocks/posts";
-@import "blocks/useful-links";
+@import "blocks/basket";
+@import "blocks/cart";
 
 .page header {
     margin-bottom: 40px;
@@ -47,21 +48,6 @@ header {
     }
 }
 
-.btn-light {
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fff;
-    border: 1px solid #4c9dd0;
-    &:hover {
-        color: $blueColor;
-        background-color: #fff;
-    }
-}
-
 .line-decor {
     margin-bottom: 20px;
     padding-bottom: 15px;
@@ -81,35 +67,6 @@ header {
     position: fixed;
 }
 
-.basket-wrap {
-    padding-top: 40px;
-    padding-bottom: 70px;
-    flex: 1;
-    background-color: #f6f8f9;
-    h1 {
-        margin-bottom: 35px;
-    }
-}
-
-.basket-empty {
-    min-height: 470px;
-    background-color: #fff;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.basket-empty-title {
-    margin-bottom: 10px;
-    font-size: 36px;
-    color: #303030;
-    text-transform: none;
-}
-
-.basket-empty-text {
-    margin-bottom: 50px;
-    color: #465a63;
-    font-size: 14px;
+.useful-links a {
+    margin: 0 10px;
 }

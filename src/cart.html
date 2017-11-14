@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<!-- include "template/head.html" -->
+<body>
+<!-- include "template/header.html" -->
+
+<div class="basket-wrap">
+    <div class="container">
+        <ul class="breadcrumbs list-unstyled">
+            <li><a href="index.html">Главная</a></li>
+            <li>Корзина</li>
+        </ul>
+
+        <h1>Корзина</h1>
+
+        <div class="row">
+            <div class="col-lg-9">
+                <ul class="basket-steps list-unstyled">
+                    <li class="basket-steps__active basket-steps__next">Редактирование вашего заказа</li>
+                    <li class="basket-steps__next">Заполнение персональных данных</li>
+                    <li>Оформление заказза</li>
+                </ul>
+
+                <div id="msCart">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr class="header">
+                                <th class="image">Фото</th>
+                                <th class="title">Наименование</th>
+                                <th class="count">Количество</th>
+                                <th class="price">Итоговая сумма</th>
+                                <th class="remove">&nbsp;</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="image">
+                                    <img src="img/example/img-12.png" alt="Товар 31" title="Товар 31">
+                                </td>
+                                <td class="title">
+                                    <a href="#">CТАНОК ЛИСТОГИБОЧНЫЙ TAPCO MAX-20</a>
+                                    <div class="title-info">Длина, высота, ширина 1450х653х333 мм</div>
+                                </td>
+                                <td class="count">
+                                    <form method="post" class="ms2_form form-inline" role="form">
+                                        <div class="form-group">
+                                            <div class="count-minus">-</div>
+                                            <input type="number" name="count" value="1" class="input-sm form-control">
+                                            <div class="count-plus">+</div>
+                                            <button class="btn" type="submit" name="ms2_action" value="cart/change">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="price">
+                                    <span>300 000</span>
+                                    <svg class="ruble">
+                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                    </svg>
+                                </td>
+                                <td class="remove">
+                                    <form method="post" class="ms2_form">
+                                        <button class="btn remove-product" type="submit" name="ms2_action"
+                                                value="cart/remove" title="Удалить текущую позицию"></button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="image">
+                                    <img src="img/example/img-13.jpg" alt="Товар 31" title="Товар 31">
+                                </td>
+                                <td class="title">
+                                    <a href="#">ОБОРУДОВАНИЕ ДЛЯ 2-МЕРНОЙ ЛАЗЕРНОЙ
+                                        РЕЗКИ TRULASER 3030 LEAN EDITION</a>
+                                    <div class="title-info">Длина, высота, ширина 1450х653х333 мм</div>
+                                </td>
+                                <td class="count">
+                                    <form method="post" class="ms2_form form-inline" role="form">
+                                        <div class="form-group">
+                                            <div class="count-minus">-</div>
+                                            <input type="number" name="count" value="1" class="input-sm form-control">
+                                            <div class="count-plus">+</div>
+                                            <button class="btn" type="submit" name="ms2_action" value="cart/change">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="price">
+                                    <span>300 000</span>
+                                    <svg class="ruble">
+                                        <use xlink:href="img/sprite.svg#ruble"></use>
+                                    </svg>
+                                </td>
+                                <td class="remove">
+                                    <form method="post" class="ms2_form">
+                                        <button class="btn remove-product" type="submit" name="ms2_action"
+                                                value="cart/remove" title="Удалить текущую позицию"></button>
+                                    </form>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="ms-card__bottom"><button class="btn-blue-big btn-big">Далее</button></div>
+                </div>
+            </div>
+            <aside class="col-lg-3">
+                <div class="order-block">
+                    <div class="order-block__title">
+                        <svg class="tag">
+                            <use xlink:href="img/sprite.svg#tag"></use>
+                        </svg>
+                        Оформление заказа
+                    </div>
+
+                    <div class="order-block__total">
+                        <div class="order-block__text">ОБЩАЯ СУММА ЗАКАЗА</div>
+
+                        <span class="ms2_total_cost">600 000</span>
+
+                        <svg class="ruble">
+                            <use xlink:href="img/sprite.svg#ruble"></use>
+                        </svg>
+                    </div>
+
+                    <form method="post">
+                        <button class="btn btn-width" type="submit" name="ms2_action" value="cart/clean">
+                            Очистить корзину
+                        </button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- include "template/footer.html" -->
+
+<!-- include "template/scripts.html" -->
+
+</body>
+</html>

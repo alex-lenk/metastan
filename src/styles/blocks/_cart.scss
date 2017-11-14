@@ -1,0 +1,167 @@
+.title-info {
+    font-size: 12px;
+    color: #d4d4d4;
+    font-weight: normal;
+}
+
+.remove-product {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    &::before, &::after {
+        width: 10px;
+        height: 2px;
+        background-color: #c82d34;
+        top: 0;
+        left: 0;
+        position: absolute;
+        content: '';
+    }
+    &::before {
+        top: 4px;
+        transform: rotate(45deg);
+    }
+    &::after {
+        top: 4px;
+        transform: rotate(-45deg);
+    }
+}
+
+.form-group {
+    display: flex;
+}
+
+.count-plus, .count-minus {
+    width: 25px;
+    background-color: #e2eff8;
+    color: #97a4ad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: #97a4ad;
+        color: #e2eff8;
+    }
+}
+
+.count-plus {
+    border-radius: 0 4px 4px 0;
+}
+
+.count-minus {
+    border-radius: 4px 0 0 4px;
+}
+
+#msCart {
+    background-color: #fff;
+    .ruble {
+        width: 16px;
+        height: 16px;
+        fill: #303030;
+        position: relative;
+        top: 2px;
+    }
+    .header {
+        color: #303030;
+        font-size: 14px;
+    }
+    thead th {
+        border-bottom: 0;
+    }
+    td {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        vertical-align: middle;
+        border-top: 1px solid #eaf0f4;
+    }
+    .image {
+        width: 140px;
+        text-align: center;
+    }
+    .title a {
+        color: #303030;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .count {
+        width: 150px;
+    }
+    .price {
+        width: 140px;
+        font-weight: bold;
+        color: #303030;
+    }
+    .remove {
+        width: 68px;
+    }
+    .form-control {
+        width: 57px;
+        height: 40px;
+        border: 1px solid #f0f0f0;
+        text-align: center;
+        color: #929fa8;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    td.price {
+        font-size: 18px;
+    }
+}
+
+.ms-card__bottom {
+    padding: 0 45px 40px;
+}
+
+.order-block {
+    padding-bottom: 30px;
+    background-color: #fff;
+    color: #303030;
+    .ruble {
+        width: 16px;
+        height: 16px;
+        fill: #303030;
+        position: relative;
+        top: 2px;
+    }
+    .btn-blue, .btn-width {
+        width: 177px;
+        margin-left: 45px;
+    }
+}
+
+.order-block__title {
+    padding: 20px 45px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #eaf0f4;
+    display: flex;
+    align-items: center;
+    .tag {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        fill: $blueColor;
+        position: relative;
+        top: -2px;
+    }
+}
+
+.order-block__total {
+    margin-bottom: 15px;
+    padding: 30px 45px 0;
+}
+
+.order-block__text {
+    margin-bottom: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ms2_total_cost {
+    font-size: 18px;
+    font-weight: bold;
+}

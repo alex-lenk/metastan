@@ -1,0 +1,73 @@
+.basket-wrap {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    flex: 1;
+    background-color: #f6f8f9;
+    h1 {
+        margin-bottom: 35px;
+    }
+}
+
+.basket-empty {
+    min-height: 470px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.basket-empty-title {
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: #303030;
+    text-transform: none;
+}
+
+.basket-empty-text {
+    margin-bottom: 50px;
+    color: #465a63;
+    font-size: 14px;
+}
+
+.basket-steps {
+    margin-bottom: 23px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #d4d4d4;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    li {
+        height: 68px;
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.basket-steps__active {
+    color: $blueColor;
+}
+
+.basket-steps__next {
+    position: relative;
+    z-index: 5;
+    &::before, &::after {
+        top: 0;
+        position: absolute;
+        content: '';
+        z-index: -1;
+        border: 37px solid transparent;
+    }
+    &::before {
+        right: -42px;
+        border-left-color: #f6f8f9;
+    }
+    &::after {
+        right: -40px;
+        border-left-color: #fff;
+    }
+}
