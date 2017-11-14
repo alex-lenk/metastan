@@ -20,81 +20,83 @@
                     <li class="basket-steps__active basket-steps__next">Заполнение персональных данных</li>
                     <li>Оформление заказза</li>
                 </ul>
+            </div>
+        </div>
 
-                <div id="msCart">
-                    <div class="contacts-data">
-                        <h4 class="contacts-data__title">Контактные данные</h4>
+        <form class="ms2_form row" id="msOrder" method="post">
+            <div class="col-lg-9">
+                <div class="contacts-data">
+                    <h4 class="contacts-data__title">Контактные данные</h4>
 
-                        <div class="ui-group">
-                            <label class="control-label" for="receiver">
-                                <span class="required-star">*</span> Получатель
-                            </label>
+                    <div class="ui-group">
+                        <label class="control-label" for="receiver">
+                            <span class="required-star">*</span> Получатель
+                        </label>
 
-                            <div>
-                                <input type="text" id="receiver" name="receiver" value="" class="ui-field">
-                            </div>
-                        </div>
-
-                        <div class="ui-group">
-                            <label class="control-label" for="phone">
-                                <span class="required-star">*</span> Телефон
-                            </label>
-                            <div>
-                                <input type="text" id="phone" name="phone" value="" class="ui-field">
-                            </div>
-                        </div>
-
-                        <div class="ui-group">
-                            <label class="control-label" for="email">
-                                <span class="required-star">*</span> Email
-                            </label>
-                            <div>
-                                <input type="text" id="email" name="email" value="" class="ui-field">
-                            </div>
-                        </div>
-
-                        <div class="ui-group">
-                            <label class="control-label" for="street">Адрес доставки</label>
-                            <div>
-                                <input type="text" id="street" name="street" value="" class="ui-field">
-                            </div>
-                        </div>
-
-                        <div class="ui-group">
-                            <label class="control-label" for="comment">
-                                <span class="required-star">*</span> Комментарий
-                            </label>
-                            <div>
-                                <textarea name="comment" id="comment" class="ui-textarea ui-field"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="ui-group">
-                            <div class="control-label">
-                                <span class="required-star">*</span> Выберите доставку
-                            </div>
-
-                            <div><label class="delivery label-block">
-                                <input type="radio" name="delivery" value="1" id="delivery_1" class="radio-custom"
-                                       data-payments="[1]" checked="">
-                                <span class="radio-custom-view label">Самовывоз</span>
-                            </label></div>
-                            <div><label class="delivery label-block">
-                                <input type="radio" name="delivery" value="2" id="delivery_2"class="radio-custom" data-payments="[1]">
-                                <span class="radio-custom-view label">Доставка курьером</span>
-                            </label></div>
+                        <div>
+                            <input type="text" id="receiver" name="receiver" value="" class="ui-field">
                         </div>
                     </div>
 
-                    <div class="ms-card__bottom">
-                        <form method="post">
-                            <button class="btn-blue-big btn-big" type="submit" name="ms2_action" value="cart/clean">
-                                ОФОРМИТЬ ЗАКАЗ
-                            </button>
-                        </form>
+                    <div class="ui-group">
+                        <label class="control-label" for="phone">
+                            <span class="required-star">*</span> Телефон
+                        </label>
+                        <div>
+                            <input type="text" id="phone" name="phone" value="" class="ui-field">
+                        </div>
+                    </div>
+
+                    <div class="ui-group">
+                        <label class="control-label" for="email">
+                            <span class="required-star">*</span> Email
+                        </label>
+                        <div>
+                            <input type="text" id="email" name="email" value="" class="ui-field">
+                        </div>
+                    </div>
+
+                    <div class="ui-group">
+                        <label class="control-label" for="street">Адрес доставки</label>
+                        <div>
+                            <input type="text" id="street" name="street" value="" class="ui-field">
+                        </div>
+                    </div>
+
+                    <div class="ui-group">
+                        <label class="control-label" for="comment">
+                            <span class="required-star">*</span> Комментарий
+                        </label>
+                        <div>
+                            <textarea name="comment" id="comment" class="ui-textarea ui-field"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="ui-group">
+                        <div class="control-label">
+                            <span class="required-star">*</span> Выберите доставку
+                        </div>
+
+                        <div><label class="delivery label-block">
+                            <input type="radio" name="delivery" value="1" id="delivery_1" class="radio-custom"
+                                   data-payments="[1]" checked="">
+                            <span class="radio-custom-view label">Самовывоз</span>
+                        </label></div>
+                        <div><label class="delivery label-block">
+                            <input type="radio" name="delivery" value="2" id="delivery_2" class="radio-custom"
+                                   data-payments="[1]">
+                            <span class="radio-custom-view label">Доставка курьером</span>
+                        </label></div>
                     </div>
                 </div>
+
+                <div class="ms-card__bottom">
+                    <button type="submit" name="ms2_action" value="order/submit" class="btn-blue-big btn-big">
+                        ОФОРМИТЬ ЗАКАЗ
+                    </button>
+                </div>
             </div>
+
             <aside class="col-lg-3">
                 <div class="order-block">
                     <div class="order-block__title">
@@ -114,14 +116,12 @@
                         </svg>
                     </div>
 
-                    <form method="post">
-                        <button class="btn btn-blue" type="submit" name="ms2_action" value="cart/clean">
-                            ОФОРМИТЬ ЗАКАЗ
-                        </button>
-                    </form>
+                    <button type="submit" name="ms2_action" value="order/submit" class="btn btn-blue">
+                        ОФОРМИТЬ ЗАКАЗ
+                    </button>
                 </div>
             </aside>
-        </div>
+        </form>
     </div>
 </div>
 

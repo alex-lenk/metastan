@@ -55,7 +55,6 @@
 }
 
 #msCart {
-    background-color: #fff;
     .ruble {
         width: 16px;
         height: 16px;
@@ -111,6 +110,10 @@
     }
 }
 
+.table-responsive, .ms-card__bottom {
+    background-color: #fff;
+}
+
 .ms-card__bottom {
     padding: 0 45px 40px;
 }
@@ -119,6 +122,8 @@
     padding-bottom: 30px;
     background-color: #fff;
     color: #303030;
+    position: relative;
+    top: -91px;
     .ruble {
         width: 16px;
         height: 16px;
