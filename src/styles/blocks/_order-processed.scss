@@ -1,0 +1,26 @@
+.order-processed {
+    min-height: 330px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    + .subscribe {
+        border-top: 1px solid #eaf0f4;
+    }
+}
+
+.order-processed__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #303030;
+    text-transform: none;
+}
+
+.order-processed__text {
+    margin-bottom: 40px;
+    color: #465a63;
+    font-size: 14px;
+    font-weight: normal;
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<!-- include "template/head.html" -->
+<body>
+<!-- include "template/header.html" -->
+
+<div class="basket-wrap">
+    <div class="container">
+        <ul class="breadcrumbs list-unstyled">
+            <li><a href="index.html">Главная</a></li>
+            <li>Корзина</li>
+        </ul>
+
+        <h1>Корзина</h1>
+
+        <div class="row">
+            <div class="col-lg-9">
+                <ul class="basket-steps list-unstyled">
+                    <li class="basket-steps__arrow">Редактирование вашего заказа</li>
+                    <li class="basket-steps__arrow">Заполнение персональных данных</li>
+                    <li class="basket-steps__active">Оформление заказза</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="msCart" class="row">
+            <div class="col-lg-9">
+                <div class="order-processed">
+                    <h2 class="order-processed__title">Заказ оформлен</h2>
+
+                    <p class="order-processed__text">Вы можете продолжить покупки в нашем каталоге.</p>
+
+                    <!-- include "template/useful-links.html" -->
+                </div>
+
+                <form class="subscribe order-processed">
+                    <h2 class="order-processed__title">Подписаться</h2>
+
+                    <p class="order-processed__text">
+                        Не хотите пропускать акционные предложения до 90%?
+                        <br>
+                        Подпишитесь на нашу почтовую рассылку
+                    </p>
+
+                    <button class="btn-blue-big btn-big">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+
+            <aside class="col-lg-3">
+                <div class="order-block">
+                    <div class="order-block__title">
+                        <svg class="tag">
+                            <use xlink:href="img/sprite.svg#tag"></use>
+                        </svg>
+                        Оформление заказа
+                    </div>
+
+                    <div class="order-block__total">
+                        <div class="order-block__text">ОБЩАЯ СУММА ЗАКАЗА</div>
+
+                        <span class="ms2_total_cost">600 000</span>
+
+                        <svg class="ruble">
+                            <use xlink:href="img/sprite.svg#ruble"></use>
+                        </svg>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- include "template/footer.html" -->
+
+<!-- include "template/scripts.html" -->
+
+</body>
+</html>
