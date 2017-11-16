@@ -91,4 +91,15 @@ $(document).ready(function () {
         }
     );
     // END
+
+    var catListItemOpened = 'catalog-list__item-opened',
+        catListItemEffect = 'catalog-list__item-effect';
+
+    $('.catalog-list__item').hover(
+        function () {
+            $(this).addClass(catListItemOpened).delay(600).addClass(catListItemEffect);
+        },
+        function () {
+            $(this).removeClass(catListItemEffect).delay(600).removeClass(catListItemOpened);
+        });
 });
