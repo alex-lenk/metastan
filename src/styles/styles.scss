@@ -119,3 +119,201 @@ header {
         content: '';
     }
 }
+
+@media (min-width: 1200px) {
+    .catalog-list__item-opened {
+        .catalog-list__media {
+            height: 0;
+            margin-bottom: 0;
+            opacity: 0;
+        }
+        .btn-blue {
+            opacity: 1;
+        }
+        .property {
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    
+    .catalog-list__item-effect {
+        overflow-y: visible;
+        .catalog-list__media {
+            opacity: 1;
+            position: absolute;
+            height: 100%;
+            display: flex;
+            box-shadow: -1px -1px 0 #eaf0f4, 0 1px 0 #eaf0f4, 1px 0 0 #fff;
+        }
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (max-width: 1199px) {
+    .search-field__btn {
+        border-radius: 0 4px 4px 0;
+        max-width: 50px;
+        padding: 0;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 69px;
+        flex: 1 0 50px;
+    }
+    .main-nav .btn-decor {
+        width: 50px;
+        span {
+            display: none;
+        }
+    }
+    .footer-production {
+        columns: 2 10px;
+    }
+    .footer-support__list {
+        li {
+            padding-left: 0;
+        }
+        svg {
+            display: none;
+        }
+    }
+    .footer-support .btn-blue {
+        padding: 0 5px;
+    }
+    .section-info__support-wrap {
+        height: 100%;
+        padding: 30px 10px;
+    }
+    .demonstrations-left__info {
+        padding: 15px 10px 0;
+    }
+    .search-field {
+        .ui-field {
+            padding-left: 10px;
+        }
+        .search {
+            display: none;
+        }
+    }
+    .catalog-list__price .price {
+        font-size: 18px;
+        .ruble {
+            width: 15px;
+            height: 15px;
+            top: 2px;
+            fill: #303030;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header-support {
+        margin-top: 30px;
+    }
+    .section-info__support {
+        display: none;
+    }
+    .catalog-list__item {
+        padding: 15px;
+    }
+    .catalog-list__item .btn-blue {
+        margin-top: 10px;
+        opacity: 1;
+    }
+    .special-offers .catalog-list__item {
+        flex-basis: calc(100% / 3);
+    }
+    .advantages {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .advantages-list {
+        flex-wrap: wrap;
+    }
+    .advantages-item {
+        padding-bottom: 0;
+        max-width: 50%;
+        flex: 50%;
+        margin-bottom: 30px;
+    }
+    .main-content {
+        margin-bottom: 50px;
+    }
+    .sidebar-block {
+        padding-left: 0;
+    }
+    .footer-menu {
+        margin-bottom: 40px;
+    }
+    .footer-support {
+        padding-top: 40px;
+    }
+    .menu {
+        left: auto;
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-field .ui-field {
+        max-width: none;
+    }
+    .header-logo-nav {
+        margin-bottom: 40px;
+    }
+    .main-nav__menu {
+        display: none;
+    }
+    .demonstrations-left__info {
+        width: 50%;
+    }
+    .special-offers .catalog-list__item {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    .header-support {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .header-support__phone {
+        margin-bottom: 15px;
+        padding-left: 0;
+        max-width: 160px;
+    }
+    .header-support__btn {
+        margin-left: 0;
+    }
+    .header-basket__icon {
+        display: none;
+    }
+    .section-info__demonstrations {
+        display: none;
+    }
+    .special-offers .catalog-list__item {
+        flex-basis: 100%;
+    }
+    .advantages-item {
+        max-width: 100%;
+        flex: 100%;
+    }
+    .footer-production {
+        columns: 1;
+    }
+    .footer-bottom .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-developer {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .header-support__phone .phone {
+        display: none;
+    }
+}
