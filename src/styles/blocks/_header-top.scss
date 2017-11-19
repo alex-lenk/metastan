@@ -20,6 +20,7 @@
 
 .nav-menu {
     margin-left: auto;
+    position: relative;
 }
 
 .nav-menu__toggle {
@@ -32,6 +33,40 @@
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
+    position: relative;
+}
+
+.menu {
+    width: 250px;
+    min-height: 200px;
+    padding: 15px;
+    border-radius: 4px;
+    top: 50px;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    z-index: 15;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(70, 90, 99, 0.2);
+    li {
+        color: $mainColor;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+    a {
+        color: inherit;
+        &:hover {
+            color: $blueColor;
+        }
+    }
+}
+
+.menu-opened {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .search-field {
@@ -93,6 +128,7 @@
 
 .header-support__btn {
     max-width: 140px;
+    padding: 0 5px;
     margin-left: auto;
     flex: 1 0 auto;
     align-self: center;

@@ -92,6 +92,14 @@ $(document).ready(function () {
     );
     // END
 
+    // BEGIN
+    $(".nav-menu__toggle").click(
+        function () {
+            $('.menu').toggleClass('menu-opened');
+        }
+    );
+    // END
+
     var catListItemOpened = 'catalog-list__item-opened',
         catListItemEffect = 'catalog-list__item-effect';
 
@@ -101,5 +109,6 @@ $(document).ready(function () {
         },
         function () {
             $(this).removeClass(catListItemEffect).delay(600).removeClass(catListItemOpened);
-        });
+        }
+    );
 });
