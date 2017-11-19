@@ -67,24 +67,40 @@
     &:checked + .checkbox-custom-view {
         color: #111;
         &::before {
-            border-color: #E6DDEE;
+            border-color: $blueColor;
+            background-color: $blueColor;
+        }
+        &::after {
+            border-color: #fff;
         }
     }
     &-view {
         cursor: pointer;
         position: relative;
+        font-size: 12px;
         display: inline-flex;
         align-items: center;
         flex-wrap: wrap;
         &::before {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-            background-color: #ffffff;
+            width: 16px;
+            height: 16px;
+            margin-right: 7px;
+            background-color: #fff;
             content: '';
-            border-radius: 4px;
-            border: 1px solid #e3e3e3;
+            border: 1px solid #eaf0f4;
             transition: all 0.3s ease;
+        }
+        &:after {
+            width: 9px;
+            height: 4px;
+            top: 6px;
+            left: 4px;
+            position: absolute;
+            border-bottom: 1px solid transparent;
+            border-left: 1px solid transparent;
+            transform: rotate(-43deg);
+            transition: all 0.3s ease;
+            content: '';
         }
         a, span {
             padding-left: 5px;

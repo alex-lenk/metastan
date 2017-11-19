@@ -15,7 +15,185 @@
 
         <div class="row">
             <aside class="col-lg-3">
-                col-lg-3
+                <form action="catalog/" method="post" class="main-filters" id="mse2_filters">
+                    <fieldset id="mse2_ms|price">
+                        <h4 class="filter_title">
+                            Цена,
+                            <svg class="ruble">
+                                <use xlink:href="img/sprite.svg#ruble"></use>
+                            </svg>
+                        </h4>
+                        <div class="mse2_number_slider"></div>
+
+                        <div class="mse2_number_inputs">
+                            <div class="form-group col-md-6">
+                                <label for="mse2_ms|price_0">От
+                                    <input type="text" name="ms|price" id="mse2_ms|price_0" value="125"
+                                           class="form-control input-sm"/>
+                                </label>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="mse2_ms|price_1">До
+                                    <input type="text" name="ms|price" id="mse2_ms|price_1" value="3000"
+                                           class="form-control input-sm"/>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="main-filters-block">
+                        <h4 class="filter_title">Бренды</h4>
+
+                        <div class="clearfix">
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Van Mark</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Металлмастер</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Эдельвейс</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Tapco</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Casette</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Norton</span>
+                            </label>
+                        </div>
+
+                        <div class="expand-all">Развернуть все</div>
+                    </fieldset>
+
+                    <fieldset class="main-filters-block">
+                        <h4 class="filter_title">Страна производитель</h4>
+
+                        <div class="clearfix">
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Россия</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Израиль</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Германия</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Греция</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Италия</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="main-filters-block">
+                        <h4 class="filter_title">Глубина подачи </h4>
+
+                        <div class="clearfix">
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">38 см</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">48 см</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">58 см</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">100 см</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Неограничено</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="main-filters-block">
+                        <h4 class="filter_title">Толщина листа</h4>
+
+                        <div class="clearfix">
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">0,1-0,5 мм</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">0,5-1,5 мм</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">1-1,9 мм</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">2-3 мм</span>
+                            </label>
+                            <label class="label-block">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span class="checkbox-custom-view label">Более 3 мм</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="mse2_msoption|tags">
+                        <h4 class="filter_title">Теги</h4>
+                        <label for="mse2_msoption|tags_0" class="">
+                            <input type="checkbox" name="msoption|tags" id="mse2_msoption|tags_0" value="Тег"/> Тег
+                        </label><br/><label for="mse2_msoption|tags_1" class="">
+                        <input type="checkbox" name="msoption|tags" id="mse2_msoption|tags_1" value="Тег''"/> Тег''
+                    </label><br/><label for="mse2_msoption|tags_2" class="">
+                        <input type="checkbox" name="msoption|tags" id="mse2_msoption|tags_2" value="Тег 1"/> Тег 1
+                    </label><br/><label for="mse2_msoption|tags_3" class="">
+                        <input type="checkbox" name="msoption|tags" id="mse2_msoption|tags_3" value="Тег 2"/> Тег 2
+                    </label><br/><label for="mse2_msoption|tags_4" class="">
+                        <input type="checkbox" name="msoption|tags" id="mse2_msoption|tags_4" value="Тег 3"/> Тег 3
+                    </label><br/>
+                    </fieldset>
+                    <fieldset id="mse2_ms|vendor">
+                        <h4 class="filter_title">Производитель</h4>
+                        <select name="ms|vendor" id="ms|vendor_0">
+                            <option value="" selected>Выберите из списка</option>
+                            <option value="0" class="">Нет&nbsp;(2)</option>
+                            <option value="1" class="">Производитель 1&nbsp;(4)</option>
+                            <option value="2" class="">Производитель 2&nbsp;(4)</option>
+                            <option value="3" class="">Производитель 3"&nbsp;(1)</option>
+                        </select>
+                    </fieldset>
+                    <fieldset id="mse2_ms|old_price">
+                        <h4 class="filter_title">Старая цена</h4>
+                        <label for="mse2_ms|old_price_0" class="">
+                            <input type="checkbox" name="ms|old_price" id="mse2_ms|old_price_0" value="1"/> Да
+                        </label><br/><label for="mse2_ms|old_price_1" class="">
+                        <input type="checkbox" name="ms|old_price" id="mse2_ms|old_price_1" value="0"/> Нет
+                    </label><br/>
+                    </fieldset>
+                    <br/>
+
+                    <button type="reset" class="btn btn-default hidden">Сбросить</button>
+                    <button type="submit" class="btn btn-success pull-right hidden">Отправить</button>
+                    <div class="clearfix"></div>
+
+                </form>
             </aside>
 
             <div class="catalog col-lg-9">

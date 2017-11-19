@@ -2,18 +2,28 @@
     <div class="header-top">
         <div class="container">
             <div class="row">
-                <div class="header-logo-nav col-lg-4">
-                    <a class="logo" href="index.html">
-                        <img src="img/logo.svg" alt="Метастан">
+                <div class="header-logo-nav col-md-6 col-lg-4 col-xl-4">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.svg" alt="Метастан"></a>
                         <span class="logo-text">Оборудование для обработки металла</span>
-                    </a>
+                    </div>
 
                     <nav class="nav-menu">
                         <button class="nav-menu__toggle two-strips btn">Меню</button>
+                        <ul class="menu list-unstyled">
+                            <li><a href="#">Отзывы о Метастан</a></li>
+                            <li><a href="about.html">Информация о компании</a></li>
+                            <li><a href="#">Акционные предложения</a></li>
+                            <li><a href="#">Сервисные условия</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Лизинг и кредит</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="#">Контактная информация</a></li>
+                        </ul>
                     </nav>
                 </div>
 
-                <div class="header-search col-lg-4">
+                <div class="header-search col-md-6 col-lg-3 col-xl-4">
                     <form action="#" class="search-field">
                         <svg class="search">
                             <use xlink:href="img/sprite.svg#search"></use>
@@ -23,7 +33,7 @@
                     </form>
                 </div>
 
-                <div class="header-support col-lg-4">
+                <div class="header-support col-md-12 col-lg-5 col-xl-4">
                     <div class="header-support__phone">
                         <svg class="phone">
                             <use xlink:href="img/sprite.svg#phone"></use>
@@ -32,7 +42,7 @@
                         <div class="header-phone__text">Бесплатный звонок по России</div>
                     </div>
 
-                    <button class="header-support__btn btn btn-blue">Перезвоните мне</button>
+                    <button class="header-support__btn btn btn-blue" data-toggle="modal" data-target="#callBack">Перезвоните мне</button>
                 </div>
             </div>
         </div>
@@ -40,8 +50,8 @@
 
     <div class="header-info container">
         <div class="row">
-            <nav class="main-nav col-lg-9">
-                <a href="#" class="btn btn-blue btn-decor">КАТАЛОГ ОБОРУДОВАНИЯ</a>
+            <nav class="main-nav col-lg-9 col-md-12 col-sm-4 col-5">
+                <a href="#" class="btn btn-blue btn-decor">КАТАЛОГ <span>ОБОРУДОВАНИЯ</span></a>
 
                 <ul class="main-nav__menu list-unstyled">
                     <li class="main-nav__item two-strips"><a href="#">СТАНКИ</a></li>
@@ -52,7 +62,7 @@
                 </ul>
             </nav>
 
-            <div class="header-basket col-lg-3">
+            <div class="header-basket col-lg-3 col-md-12 col-sm-8 col-7">
                 <div class="header-basket__icon">
                     <svg class="basket">
                         <use xlink:href="img/sprite.svg#basket"></use>
