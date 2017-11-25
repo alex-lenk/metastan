@@ -282,12 +282,12 @@ header {
     font-size: 14px;
     color: $blueColor;
     line-height: 1;
-    border-bottom: 1px solid;
+    text-decoration: underline;
     transition: all 0.3s ease;
 }
 
 .swiper-main {
-    width: 260px;
+    width: 100%;
     height: 468px;
     overflow: hidden;
 }
@@ -571,9 +571,23 @@ header {
     .catalog-list-block {
         flex-basis: 50%;
     }
+    .characteristic-content .swiper-slide {
+        padding: 15px 0;
+    }
+    .card-feature-bottom .btn {
+        min-width: 200px;
+        margin-right: 14px;
+    }
+    .card-page {
+        padding: 10px 0;
+    }
+    .related-product .catalog-list__item {
+        max-width: calc(100% / 3);
+        flex: 1 1 calc(100% / 3);
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .search-field .ui-field {
         max-width: none;
     }
@@ -588,6 +602,24 @@ header {
     }
     .special-offers .catalog-list__item {
         flex-basis: 50%;
+    }
+    .card-page {
+        flex-wrap: wrap;
+    }
+    .breadcrumbs li:last-child,
+    .breadcrumbs li:not(:first-child)::after {
+        display: none;
+    }
+    .characteristic-content .swiper-slide {
+        flex-direction: column;
+    }
+    .characteristic-top .swiper-slide {
+        width: 150px;
+        font-size: 12px;
+    }
+    .related-product .catalog-list__item {
+        max-width: 50%;
+        flex: 1 1 50%;
     }
 }
 
@@ -664,11 +696,6 @@ header {
     .meta-data__number {
         font-size: 50px;
     }
-    .breadcrumbs {
-        li:last-child {
-            display: none;
-        }
-    }
     h1, .h1 {
         @include font-size(24px);
     }
@@ -695,5 +722,32 @@ header {
         margin-bottom: 30px;
         padding: 0;
         box-shadow: none;
+    }
+    
+    .breadcrumbs {
+        display: none;
+    }
+    
+    .related-product .catalog-list__item {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .card-page .col-2 {
+        display: none;
+    }
+    .card-feature-bottom {
+        flex-direction: column;
+    }
+    .card-feature-bottom .btn {
+        margin-bottom: 20px;
+    }
+    .swiper-container-free-mode > .swiper-wrapper {
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+    .characteristic-top .swiper-slide {
+        white-space: nowrap;
+        height: 20px;
+        margin-bottom: 10px;
     }
 }
