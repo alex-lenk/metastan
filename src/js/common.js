@@ -100,6 +100,8 @@ $(document).ready(function () {
     );
     // END
 
+
+    // BEGIN
     var catListItemOpened = 'catalog-list__item-opened',
         catListItemEffect = 'catalog-list__item-effect';
 
@@ -111,4 +113,63 @@ $(document).ready(function () {
             $(this).removeClass(catListItemEffect).delay(600).removeClass(catListItemOpened);
         }
     );
+
+    // END
+
+    var swiperMain = new Swiper('.swiper-main', {
+        slidesPerView: 1
+    });
+
+    var swiperThrumb = new Swiper('.gallery-thumbs', {
+        direction: 'vertical',
+        spaceBetween: 20,
+        centeredSlides: true,
+        slidesPerView: 4,
+        slideToClickedSlide: true
+    });
+    swiperMain.controller.control = swiperThrumb;
+    swiperThrumb.controller.control = swiperMain;
+    // END
+
+
 });
+
+
+window.onload = function () {
+    function setCurrentSlide(ele, index) {
+        $(".characteristic-top .swiper-slide").removeClass("selected");
+        ele.addClass("selected");
+        //characteristic-top.initialSlide=index;
+    }
+
+    var characteristicTop = new Swiper(".characteristic-top", {
+        slidesPerView: 5,
+        paginationClickable: true,
+        spaceBetween: 5,
+        freeMode: true,
+        loop: false,
+        onTab: function (swiper) {
+            var n = characteristicTop.clickedIndex;
+            alert(1);
+        }
+    });
+    characteristicTop.slides.each(function (index, val) {
+        var ele = $(this);
+        ele.on("click", function () {
+            setCurrentSlide(ele, index);
+            characteristicContent.slideTo(index, 500, false);
+            //mySwiper.initialSlide=index;
+        });
+    });
+
+    var characteristicContent = new Swiper(".characteristic-content", {
+        direction: "horizontal",
+        loop: false,
+        autoHeight: true,
+        onSlideChangeEnd: function (swiper) {
+            var n = swiper.activeIndex;
+            setCurrentSlide($(".characteristic-top .swiper-slide").eq(n), n);
+            characteristicTop.slideTo(n, 500, false);
+        }
+    });
+};
